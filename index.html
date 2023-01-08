@@ -9,14 +9,84 @@
 <body>
   <div class="left-side-container">
     <img class="backround-photo" src="Photos/photo.jpg" alt="Backround photo of kitchen">
-
     <div class="logo-container">
       <img class="logo-photo" src="Photos/odin-lined.png" alt="Odin head logo">
       <h1>ODIN</h1>
     </div>
   </div>
-  <div class="right-side-container">
 
+
+  <div class="right-side-container">
+    <div class="info">
+      <p>This is not a real online service! You can just try to write some random info. After click on button you can see your info on the end of adress bar. </p>
+      <p>Try to click and write something!</p>
+    </div>
+    <div class="form">
+      <form action='' method='get' class='speaker-form'>
+        <fieldset>
+          <div class='form-row'>
+            <label for='name'>Name
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input id='name' name='name' type='text'/>
+          </div>
+          <div class='form-row'>
+            <label for='surname'>Surname
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input id='surname' name='surname' type='text'/>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class='form-row'>
+            <label for='email'>Email
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input id='email'
+                   name='email'
+                   type='email'
+                   placeholder='jan.novak@email.cz'/>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}">
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-row">
+            <label for="pwd">
+              <span>Password:</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="password" id="pwd" name="password" />
+          </div>
+          <div class="form-row">
+            <label for="pwd">
+              <span>Confirm password: </span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="password" id="pwd" name="password" />
+          </div>
+        </fieldset>
+    </div>
+    
+        <fieldset class="buttons">
+            <div class='button'>
+                <label class='checkbox-label' for='confirm'>
+                <input id='confirm'
+                       name='confirm'
+                       type='checkbox'
+                       value='confirm-t&c'
+                       required/>
+                <span>I agree terms & conditions.</span>
+                <strong><span aria-label="required">*</span></strong>
+                </label>
+              </div>
+            <div class='button'>
+                <button>Create Account</button>
+            </div>
+        </fieldset>
+      </form>
   </div>
 </body>
 </html>
